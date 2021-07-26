@@ -12,10 +12,7 @@ class lol extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var controller = Get.put(homecontroller());
-    TextEditingController textEditingController = TextEditingController();
-    var name = 'jahangir';
-    var age;
-    var ss;
+
     return Scaffold(
       body: Center(
         child: Column(
@@ -60,16 +57,11 @@ class SecondPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var controller = Get.put(homecontroller());
-    print(myclass().name);
-    var name = controller.name.value;
+
     return Scaffold(
       body: Center(
         child: InkWell(onTap: () {}, child: Text(controller.textfield.value)),
       ),
     );
   }
-}
-
-class myclass {
-  var name = "jahangir";
 }
